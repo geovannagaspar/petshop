@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8ad0ff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color:  #064a70;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+}
+
+/* Área principal */
+
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px#064a70(123, 44, 191, 0.2);
+}
+
+h2 {
+    color: #064a70;
+}
+
+/* Campos */
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #064a70;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/* Quantidade e preço  */
+
+.linha {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.linha div {
+    width: 200px;
+}
+
+.linha input {
+    width: 170px;
+}
+
+/* Botões */
+
+button {
+    background-color: #064a70;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Tabela */
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #064a70;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #064a70;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8effb;
+}
+
+/* Resumo */
+
+.resumo {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.resumo p {
+    font-size: 18px;
+}
+
+#total {
+    color: #064a70;
+    font-size: 25px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #064a70;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .linha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
